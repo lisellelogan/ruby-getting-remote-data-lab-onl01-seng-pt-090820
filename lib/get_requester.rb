@@ -4,11 +4,11 @@ class GetRequester
 
   def initialize(url)
     @url = url
-    binding.pry
   end
 
   def get_response_body
     uri = URI.parse(self)
+    binding.pry
     response = Net::HTTP.get_response(uri)
     response.body
   end
