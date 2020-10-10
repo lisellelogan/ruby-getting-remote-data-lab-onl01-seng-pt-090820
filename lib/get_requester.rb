@@ -1,7 +1,9 @@
 require 'pry'
 
 class GetRequester
-
+  require 'open-uri'
+  require 'net/http'
+  
   def initialize(url)
     @url = url
   end
