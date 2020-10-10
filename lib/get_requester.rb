@@ -9,5 +9,4 @@ class GetRequester
     response = Net::HTTP.get_response_body(uri)
     response.body
   end
-  end
 end
