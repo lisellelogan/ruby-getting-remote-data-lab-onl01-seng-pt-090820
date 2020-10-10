@@ -1,8 +1,9 @@
 require 'pry'
+require 'open-uri'
+require 'net/http'
+
 
 class GetRequester
-  # require 'open-uri'
-  # require 'net/http'
   attr_reader :url
   def initialize(url)
     @url = url
